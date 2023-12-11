@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public int cluesFound = 0;
 
-    public int maxClues = 5;
+    public int maxClues = 2;
 
     public string gameState = "Start";
 
@@ -29,11 +29,6 @@ public class GameManager : MonoBehaviour
         if (gameState == "gameOver")
         {
             return;
-        }
-        if (plateState && lights[0].enabled && lights[1].enabled && lights[2].enabled && lights[3].enabled && lights[4].enabled)
-        {
-            plateState = false;
-            cluesFound += 1;
         }
         if (cluesFound == maxClues)
         {
