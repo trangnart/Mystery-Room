@@ -13,7 +13,7 @@ public class OpenDoor : MonoBehaviour
     {
         Debug.Log("here");
         if (state || other.gameObject.layer != LayerMask.NameToLayer(layer)) return;
-        door.transform.position += new Vector3(0, 3, 0);
+        door.transform.position += new Vector3(0, 4, 0);
         state = true;
         gameManager.cluesFound += 1;
     }
