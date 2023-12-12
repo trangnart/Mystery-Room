@@ -769,8 +769,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de0134c52190474b993f0ae80600a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: Arm
-  gameManager: {fileID: 0}
 --- !u!1 &320899779 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100010, guid: 7d3e1e087a6fd684da2b08ef5c3fe259,
@@ -789,8 +787,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de0134c52190474b993f0ae80600a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 
-  gameManager: {fileID: 0}
 --- !u!1001 &345647574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1348,7 +1344,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer: Mannequin
   gameManager: {fileID: 1485308429}
-  triggered: 0
 --- !u!4 &460006143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400012, guid: 2c500abd2ae735a4193dbc5d6b65c168,
@@ -1367,8 +1362,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de0134c52190474b993f0ae80600a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: Mannequin
-  gameManager: {fileID: 1485308429}
 --- !u!54 &460006148
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1403,8 +1396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de0134c52190474b993f0ae80600a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 
-  gameManager: {fileID: 0}
 --- !u!4 &518210998 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7d3e1e087a6fd684da2b08ef5c3fe259,
@@ -2386,8 +2377,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de0134c52190474b993f0ae80600a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 
-  gameManager: {fileID: 0}
 --- !u!1001 &941928951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2991,7 +2980,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1066199057}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4de0134c52190474b993f0ae80600a14, type: 3}
+  m_Script: {fileID: 11500000, guid: fff9989246644af4a8a59b819bacb45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   layer: Chair
@@ -3244,6 +3233,7 @@ MonoBehaviour:
   playerMovement: {fileID: 1157011142}
   deathMessageUI: {fileID: 1755793701}
   chairPic: {fileID: 1782335751}
+  dollPic: {fileID: 1026794253}
   startingPoint: {fileID: 1527143154}
   plateState: 1
   cluesFound: 0
@@ -3646,6 +3636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57efd5df0c9624586884e01ec0ace531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetLayer: Mannequin
   gameManager: {fileID: 1485308429}
 --- !u!4 &1526738840 stripped
 Transform:
@@ -4387,8 +4378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de0134c52190474b993f0ae80600a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 
-  gameManager: {fileID: 0}
 --- !u!1 &1782335751
 GameObject:
   m_ObjectHideFlags: 0
@@ -4598,8 +4587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de0134c52190474b993f0ae80600a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: Arm
-  gameManager: {fileID: 1485308429}
 --- !u!1 &1807862408 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 7d3e1e087a6fd684da2b08ef5c3fe259,
@@ -4618,8 +4605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de0134c52190474b993f0ae80600a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer: 
-  gameManager: {fileID: 0}
 --- !u!1001 &1825870362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5652,7 +5637,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2084433796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4de0134c52190474b993f0ae80600a14, type: 3}
+  m_Script: {fileID: 11500000, guid: fff9989246644af4a8a59b819bacb45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   layer: Chair
