@@ -6,11 +6,12 @@ public class FlashlightToggle : MonoBehaviour
 {
     // Start is called before the first frame update
     public Light flashlight;
-    public bool on = true;
+    public bool on = false;
 
     void Start()
     {
-        on = true;        
+        flashlight.enabled = false;
+        on = false;
     }
 
     // Update is called once per frame
@@ -25,6 +26,6 @@ public class FlashlightToggle : MonoBehaviour
             flashlight.enabled = true;
             on = true;
         }
-       } 
+       }
     }
 }
