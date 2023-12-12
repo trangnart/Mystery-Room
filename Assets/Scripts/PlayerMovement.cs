@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -16,10 +14,25 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    // Public method to disable player control
+    public void DisableControl()
+    {
+        enabled = false;
+        controller.enabled = false; // Also disable the CharacterController to stop all movement
+    }
+
+    // Public method to enable player control
+    public void EnableControl()
+    {
+        enabled = true;
+        controller.enabled = true; // Re-enable the CharacterController
+    }
+
     void Update()
     {
-
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+        if (!enabled) return; // If the script is disabled, don't process input
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
@@ -28,15 +41,15 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime);
 
-
         if (!isGrounded)
         {
             velocity.y += gravity * Time.deltaTime;
-        } else
+        }
+        else
         {
             velocity.y = 0;
         }
-        controller.Move(velocity * Time.deltaTime);
 
+        controller.Move(velocity * Time.deltaTime);
     }
 }
