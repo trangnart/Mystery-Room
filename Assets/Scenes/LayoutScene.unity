@@ -2863,6 +2863,7 @@ GameObject:
   - component: {fileID: 1066199060}
   - component: {fileID: 1066199059}
   - component: {fileID: 1066199058}
+  - component: {fileID: 1066199062}
   m_Layer: 0
   m_Name: redPlate
   m_TagString: Untagged
@@ -2949,6 +2950,20 @@ Transform:
   m_Father: {fileID: 1060497478}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1066199062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066199057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff9989246644af4a8a59b819bacb45d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer: Chair
+  gameManager: {fileID: 1485308429}
 --- !u!1001 &1127462296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3392,9 +3407,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endDoor: {fileID: 744101679}
-  playerMovement: {fileID: 0}
+  playerMovement: {fileID: 1157011142}
   deathMessageUI: {fileID: 1755793701}
-  startingPoint: {fileID: 0}
+  chairPic: {fileID: 1782335751}
+  startingPoint: {fileID: 1066199061}
   plateState: 1
   cluesFound: 0
   maxClues: 2
@@ -4051,7 +4067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1755793702
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4289,7 +4305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!54 &1782335752
 Rigidbody:
   m_ObjectHideFlags: 0
