@@ -4,7 +4,7 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
-    public Light[] lights;
+    //public Light[] lights;
     public GameObject endDoor;
     public PlayerMovement playerMovement; // Reference to the PlayerMovement script
     public GameObject deathMessageUI; // Assign a UI GameObject with the "You Died" message
@@ -17,11 +17,14 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        foreach (Light light in lights)
-        {
-            light.enabled = false;
-        }
+        //foreach (Light light in lights)
+        //{
+        //    light.enabled = false;
+        //}
         deathMessageUI.SetActive(false); // Make sure the death message is not shown at start
+
+	// Set the starting point position
+    	startingPoint.position = new Vector3(0.34f, 0.84f, -55.49f);
     }
 
     void Update()
@@ -34,11 +37,11 @@ public class GameManager : MonoBehaviour
 
         // Your existing game logic...
         
-        if (plateState && lights[0].enabled && lights[1].enabled && lights[2].enabled && lights[3].enabled && lights[4].enabled)
-        {
-            plateState = false;
-            cluesFound += 1;
-        }
+        //if (plateState && lights[0].enabled && lights[1].enabled && lights[2].enabled && lights[3].enabled && lights[4].enabled)
+        //{
+        //    plateState = false;
+        //    cluesFound += 1;
+        //}
 
         if (cluesFound == maxClues)
         {

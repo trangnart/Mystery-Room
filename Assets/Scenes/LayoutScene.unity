@@ -3399,7 +3399,7 @@ MonoBehaviour:
   - {fileID: 0}
   endDoor: {fileID: 0}
   playerMovement: {fileID: 0}
-  deathMessageUI: {fileID: 0}
+  deathMessageUI: {fileID: 1755793701}
   startingPoint: {fileID: 0}
   plateState: 1
   cluesFound: 0
@@ -4057,7 +4057,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1755793702
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5440,6 +5440,7 @@ GameObject:
   - component: {fileID: 2084433799}
   - component: {fileID: 2084433798}
   - component: {fileID: 2084433797}
+  - component: {fileID: 2084433801}
   m_Layer: 0
   m_Name: whitePlate
   m_TagString: Untagged
@@ -5526,6 +5527,20 @@ Transform:
   m_Father: {fileID: 1060497478}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2084433801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084433796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff9989246644af4a8a59b819bacb45d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer: Chair
+  gameManager: {fileID: 1485308429}
 --- !u!1001 &2124549596
 PrefabInstance:
   m_ObjectHideFlags: 0
