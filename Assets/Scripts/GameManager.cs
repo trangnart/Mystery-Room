@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public PlayerMovement playerMovement; // Reference to the PlayerMovement script
     public GameObject deathMessageUI; // Assign a UI GameObject with the "You Died" message
     public GameObject chairPic;
+    public GameObject dollPic;
     public Transform startingPoint; // Assign the starting point Transform
 
     public bool plateState = true;
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
         //}
         deathMessageUI.SetActive(false); // Make sure the death message is not shown at start
 	chairPic.SetActive(false);// Make sure the picture is not shown at start
+    dollPic.SetActive(false);
 	// Set the starting point position
     	//startingPoint.position = new Vector3(0.34f, 0.84f, -55.49f);
     }
@@ -55,10 +57,11 @@ public class GameManager : MonoBehaviour
     {
         playerMovement.DisableControl(); // Disable player controls
         deathMessageUI.SetActive(true); // Show "You Died" message
-        yield return new WaitForSeconds(3); // Wait for 3 seconds
+        yield return new WaitForSeconds(1); // Wait for 1 seconds
         deathMessageUI.SetActive(false); // Hide "You Died" message
         playerMovement.transform.position = startingPoint.position; // Teleport player to start
         playerMovement.EnableControl(); // Re-enable player controls
-	chairPic.SetActive(true);//display picture
+        chairPic.SetActive(true);//display picture
+        if (cluesFound > 0) dollPic.SetActive(true);//display picture
     }
 }
