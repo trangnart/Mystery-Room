@@ -11,7 +11,7 @@ public class EndGame : MonoBehaviour
     {
         Debug.Log("HERE");
         Debug.Log(gameManager.gameState);
-        if (gameManager.gameState == "cluesFound") gameManager.gameState = "gameOver";
+        if (gameManager.gameState == "cluesFound") gameManager.gameState = "You escape";
         Debug.Log(gameManager.gameState);
     }
 }

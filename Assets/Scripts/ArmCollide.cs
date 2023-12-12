@@ -23,8 +23,6 @@ public class ArmCollide : MonoBehaviour
             gameManager.cluesFound += 1;
             Destroy(col.gameObject);
             Destroy(gameObject);
-            // Debug.Log(gameManager.cluesFound);
-
         }
 
     }

@@ -3391,19 +3391,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80769fad52fb25b4590717b1d299ee5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lights:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  endDoor: {fileID: 0}
+  endDoor: {fileID: 744101679}
   playerMovement: {fileID: 0}
   deathMessageUI: {fileID: 1755793701}
   startingPoint: {fileID: 0}
   plateState: 1
   cluesFound: 0
-  maxClues: 5
+  maxClues: 2
   gameState: Start
 --- !u!4 &1485308430
 Transform:
