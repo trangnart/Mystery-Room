@@ -1,4 +1,4 @@
-# Mystery_Room
+# Mystery_Room (Prototype 3)
 Creators: Jane Tran and Ziyuan Wang.
 
 ## Description
